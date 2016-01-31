@@ -1,0 +1,37 @@
+{
+  "name": "keyword-awake",
+  "version": "1.0.0",
+  "description": "A building block for any voice activated system. This module uses CMU pocketsphinx's keyword recognition algorithms to wake up on a keyword. It conforms to the output entity object format of the Ashiya Home System project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishbajaj99/wake-on-voice-keyword.git"
+  },
+  "keywords": [
+    "pocketsphinx",
+    "CMU",
+    "sphinx",
+    "keyword",
+    "search",
+    "wake",
+    "on",
+    "keyword",
+    "jarvis",
+    "voice",
+    "activation"
+  ],
+  "author": "Ashish Bajaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashishbajaj99/wake-on-voice-keyword/issues"
+  },
+  "homepage": "https://github.com/ashishbajaj99/wake-on-voice-keyword#readme",
+  "dependencies": {
+    "mic": "^1.0.3",
+    "pocketsphinx": "^5.0.5",
+    "speaker": "^0.2.6"
+  }
+}

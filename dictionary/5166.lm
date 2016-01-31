@@ -1,0 +1,63 @@
+Language model created by QuickLM on Sat Jan 30 06:51:52 EST 2016
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 8 sentences and 11 words
+
+\data\
+ngram 1=11
+ngram 2=17
+ngram 3=12
+
+\1-grams:
+-0.8451 </s> -0.3010
+-0.8451 <s> -0.2156
+-1.7482 AAA -0.2852
+-1.2711 AASHIYA -0.2341
+-1.7482 ARSIYA -0.2341
+-1.7482 ASHEEYA -0.2341
+-1.7482 ASHH -0.2852
+-1.7482 ASHIYA -0.2341
+-1.7482 HELLO -0.2771
+-1.7482 HEY -0.2771
+-1.4472 SHIYA -0.2341
+
+\2-grams:
+-1.2041 <s> AAA 0.0000
+-1.2041 <s> AASHIYA 0.0000
+-1.2041 <s> ARSIYA 0.0000
+-1.2041 <s> ASHEEYA 0.0000
+-1.2041 <s> ASHH 0.0000
+-1.2041 <s> ASHIYA 0.0000
+-1.2041 <s> HELLO 0.0000
+-1.2041 <s> HEY 0.0000
+-0.3010 AAA SHIYA 0.0000
+-0.3010 AASHIYA </s> -0.3010
+-0.3010 ARSIYA </s> -0.3010
+-0.3010 ASHEEYA </s> -0.3010
+-0.3010 ASHH SHIYA 0.0000
+-0.3010 ASHIYA </s> -0.3010
+-0.3010 HELLO AASHIYA 0.0000
+-0.3010 HEY AASHIYA 0.0000
+-0.3010 SHIYA </s> -0.3010
+
+\3-grams:
+-0.3010 <s> AAA SHIYA
+-0.3010 <s> AASHIYA </s>
+-0.3010 <s> ARSIYA </s>
+-0.3010 <s> ASHEEYA </s>
+-0.3010 <s> ASHH SHIYA
+-0.3010 <s> ASHIYA </s>
+-0.3010 <s> HELLO AASHIYA
+-0.3010 <s> HEY AASHIYA
+-0.3010 AAA SHIYA </s>
+-0.3010 ASHH SHIYA </s>
+-0.3010 HELLO AASHIYA </s>
+-0.3010 HEY AASHIYA </s>
+
+\end\
