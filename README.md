@@ -24,7 +24,8 @@ pocketsphinx_continuous -inmic yes
 After the above is tested and validated, you can proceed to install the module using:
 
 ```
-$ npm install https://github.com/ashishbajaj99/wake-on-voice-keyword
+$ git clone https://github.com/ashishbajaj99/wake-on-voice-keyword
+$ npm install
 ```
 
 Building a simple language model
