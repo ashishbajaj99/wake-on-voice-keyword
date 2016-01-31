@@ -48,6 +48,16 @@ Download the tarball created by the webservice and dump the files into the dicti
 
 Running
 ============
+First you need to setup the 4 environment variables in a .env file. For example:
+
+```
+MODEL_DIR="/usr/local/share/pocketsphinx/model/en-us/en-us"
+DICT_TO_USE="dictionary/5166.dic"
+KEYPHRASE_FILE="keyphrase.txt"
+POCKETSPHINX_LOG="pocketsphinx-logs.txt"
+```
+The code uses the package ```node-env-file``` to handle the loading of the environment variables.
+
 ```
 node index.js    
 ```
