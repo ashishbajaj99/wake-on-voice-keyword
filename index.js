@@ -1,6 +1,6 @@
 var fs = require('fs');
 var ps = require('pocketsphinx').ps;
-var microphone = require('mic');
+var mic = require('mic');
 var env = require('node-env-file');
 
 env('.env');
@@ -17,8 +17,8 @@ config.setString("-kws", process.env.KEYPHRASE_FILE);
 config.setString("-logfn", process.env.POCKETSPHINX_LOG);
 var decoder = new ps.Decoder(config);
 decoder.startUtt();
-var micFileStream = microphone.audioStream;
-var micInfoStream = microphone.infoStream;
+var micInstance = mic({ 'debug': false });
+var micFileStream = micInstance.getAudioStream();
 
 var processMic = function() {
     var chunkCounter = 0;
@@ -48,14 +48,8 @@ console.log("\n/***********************************************\n\
  * my name. So simply say:                     *\n\
  * \"ASHIYA\" <wait for beep> Wassup girl?       *\n\
 ************************************************/");
-microphone.startCapture();
+micInstance.start();
 micFileStream.on('data', processMic());
-micFileStream.on('end', function() {
+micFileStream.on('processExitComplete', function() {
 	console.log("file stream completed");
 });
-//micInfoStream.on('error', function(err) {
-//    console.log('Error: ' + err);
-//});
-//micInfoStream.on('data', function(data) {
-//   console.log('Data: '+data);
-//});

@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/ashishbajaj99/wake-on-voice-keyword#readme",
   "dependencies": {
-    "mic": "^1.0.3",
+    "mic": "^2.0.1",
     "node-env-file": "^0.1.8",
     "pocketsphinx": "^5.0.5"
   }
